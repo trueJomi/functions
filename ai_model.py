@@ -41,7 +41,7 @@ class AI_MODEL():
         with open(f"prompts/{self.indications}.txt", mode="r", encoding="utf-8") as file:
             instructions = file.read()
         return GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-2.5-flash-preview-04-17",
             generation_config=GenerationConfig(
                 temperature=0.8,
                 response_mime_type=self.results_type.value
